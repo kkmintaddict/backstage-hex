@@ -1,0 +1,15 @@
+$body-color:#482e16;
+
+a{
+    color: $body-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: $primary;
+    transition: all 0.1s;
+}
+.link-effect{
+    text-decoration: none;
+    cursor: pointer;
+}
