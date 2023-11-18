@@ -1,3 +1,5 @@
+This is a homework website created with Bootstrap 5
+
 
 /* Color Theme Swatches in HSLA */
 .Freshly-pressed-Fruit-vegetable-juice-smoothie-with-fruits-veggie-toppings-on-transparent-background-cutout.-PNG-file.-Many-assorted-different-flavour.-Mockup-template-for-artwork-design-1-hsla { color: hsla(348, 49, 43, 1); }
