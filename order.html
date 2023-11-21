@@ -22,38 +22,25 @@
             </div>
 
             <!-- 選單 -->
-            <div class="overflow-auto mt-3">
-                <div>
-                    <a href="home.html" class="sidebar-link">
-                        <div class="px-4"><i class="bi bi-house pe-3"></i>首頁</div>  
-                    </a>
-                </div>
-
-                <div>
-                    <a href="#menu-order" class="sidebar-link" data-bs-toggle="collapse">
-                        <div class="d-flex justify-content-between px-4">
-                            <p class="mb-0"><i class="bi bi-bag pe-3"></i>訂單管理</p>
-                            <i class="bi bi-caret-down"></i>
-                        </div>
-                    </a>
-                    <div class="collapse show" id="menu-order">
-                        <a href="orders.html" class="sidebar-link" data-bs-toggle="collapse">
-                            <div class="ps-5"><i class="bi bi-three-dots pe-3"></i>訂單總表</div>  
-                        </a>
-                    </div>
-                    <div class="collapse show" id="menu-order">
-                        <a href="order.html" class="sidebar-link active" data-bs-toggle="collapse">
-                            <div class="ps-5"><i class="bi bi-three-dots pe-3"></i>單一訂單細節</div>  
-                        </a>
-                    </div>
-                </div>
-
-                <div>
-                    <a href="#" class="sidebar-link">
-                        <div class="px-4"><i class="bi bi-list-task pe-3"></i>參考連結</div>  
-                    </a>
-                </div>    
-            </div>
+            <nav class="overflow-auto mt-3 ">
+                <a href="home.html" class="px-4 sidebar-link">
+                    <i class="bi bi-house pe-3"></i>首頁
+                </a>
+                
+                <a href="#menu-order" class="d-flex align-middle px-4 sidebar-link " data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="menu-order">
+                    <i class="bi bi-bag pe-3"></i>訂單管理<i class="bi bi-caret-down ms-auto"></i>
+                </a>
+                <ul class="collapse show list-unstyled" id="menu-order">
+                    <li class="sidebar-link">
+                        <a href="orders.html" class="py-3 px-5"><i class="bi bi-three-dots pe-3"></i>訂單總覽表格</a>
+                    </li>
+                    <li class="sidebar-link active">
+                        <a href="order.html" class="py-3 px-5" ><i class="bi bi-three-dots pe-3"></i>單一訂單管理</a>
+                    </li>  
+                </ul>         
+           
+                <a href="#" class="px-4 sidebar-link"> <i class="bi bi-list-task pe-3"></i>參考連結</a>        
+            </nav>
 
             <!-- 登出按鈕 -->
             <a href="#" class="mt-auto sidebar-link border-top">
@@ -84,7 +71,7 @@
                     <div class="col-lg-9">
                         <!-- 摘要區塊 -->
                         <div class="card mb-3">
-                            <div class="card-header" id="summary">摘要</div>
+                            <div class="card-header" id="summary"><h2 class="h6 lh-lg mb-0">摘要</h2></div>
 
                             <div class="card-body">
                                 <dl class="row mb-0">
@@ -102,7 +89,7 @@
 
                           <!-- 購買品項區塊 -->
                           <div class="card mb-3">
-                            <div class="card-header" id="cart-detal">購買品項</div>
+                            <div class="card-header" id="cart-detal"><h2 class="h6 lh-lg mb-0">購買品項</h2></div>
 
                                 <div class="card-body table-responsive p-0">
                                   <table class="table table-hover mb-0">
@@ -271,7 +258,7 @@
 
                           <!-- 發票區塊 -->
                           <div class="card mb-3">
-                            <div class="card-header" id="receipts">發票管理</div>
+                            <div class="card-header" id="receipts"><h2 class="h6 lh-lg mb-0">發票管理</h2></div>
                             <div class="card-body">
                                 <form class="text-nowrap">
                                     <div class="mb-3 row">
@@ -308,21 +295,21 @@
 
                           <!-- 危險區塊 -->
                           <div class="card mb-3">
-                            <div class="card-header bg-light" id="dangerous">危險</div>
+                            <div class="card-header bg-light" id="dangerous"><h2 class="h6 lh-lg mb-0">危險</h2></div>
                             <div class="card-body">
                                     <div class="row mb-3 d-flex align-items-center">
                                         <div class="col-6 col-md-4  col-lg-2"><button type="button" class="btn btn-outline-secondary w-100">退讓</button></div>
-                                        <div class="col ">退還用戶款項</div>
+                                        <div class="col"><p class="mb-0">退還用戶款項</p></div>
                                     </div>
 
                                     <div class="row mb-3 d-flex align-items-center">
                                         <div class="col-6 col-md-4  col-lg-2"><button type="button" class="btn btn-outline-secondary w-100">折讓</button></div>
-                                        <div class="col">針對已開立的訂單退回部分款項</div>
+                                        <div class="col"><p class="mb-0">針對已開立的訂單退回部分款項</p></div>
                                     </div>
 
                                     <div class="row d-flex align-items-center">
                                         <div class="col-6 col-md-4 col-lg-2"><button type="button" class="btn btn-outline-info w-100 ">刪除訂單</button></div>
-                                        <div class="col">將訂單刪除，並移除相關訂單資訊</div>
+                                        <div class="col"><p class="mb-0">將訂單刪除，並移除相關訂單資訊</p></div>
                                     </div>
                             </div>
                           </div>

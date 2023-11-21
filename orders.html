@@ -22,38 +22,25 @@
             </div>
 
             <!-- 2. 選單 -->
-            <div class="overflow-auto mt-3">
-                <div>
-                    <a href="home.html" class="sidebar-link">
-                        <div class="px-4"><i class="bi bi-house pe-3"></i>首頁</div>  
-                    </a>
-                </div>
-
-                <div>
-                    <a href="#menu-order" class="sidebar-link" data-bs-toggle="collapse"> <!-- 底下有子選單 -->
-                        <div class="d-flex justify-content-between px-4">
-                            <p class="mb-0"><i class="bi bi-bag pe-3"></i>訂單管理</p>
-                            <i class="bi bi-caret-down"></i> <!-- 箭頭 -->
-                        </div>
-                    </a>
-                    <div class="collapse show" id="menu-order">
-                        <a href="orders.html" class="sidebar-link active" data-bs-toggle="collapse">
-                            <div class="ps-5"><i class="bi bi-three-dots pe-3"></i>訂單總表</div>  
-                        </a>
-                    </div>
-                    <div class="collapse show" id="menu-order">
-                        <a href="order.html" class="sidebar-link data-bs-toggle="collapse">
-                            <div class="ps-5"><i class="bi bi-three-dots pe-3"></i>單一訂單細節</div>  
-                        </a>
-                    </div>
-                </div>
-
-                <div>
-                    <a href="#" class="sidebar-link">
-                        <div class="px-4"><i class="bi bi-list-task pe-3"></i>參考連結</div>  
-                    </a>
-                </div>
-            </div>
+            <nav class="overflow-auto mt-3 ">
+                <a href="home.html" class="px-4 sidebar-link">
+                    <i class="bi bi-house pe-3"></i>首頁
+                </a>
+                
+                <a href="#menu-order" class="d-flex align-middle px-4 sidebar-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="menu-order">
+                    <i class="bi bi-bag pe-3"></i>訂單管理<i class="bi bi-caret-down ms-auto"></i>
+                </a>
+                <ul class="collapse show list-unstyled" id="menu-order">
+                    <li class="sidebar-link active">
+                        <a href="orders.html" class="py-3 px-5"><i class="bi bi-three-dots pe-3"></i>訂單總覽表格</a>
+                    </li>
+                    <li class="sidebar-link">
+                        <a href="order.html" class="py-3 px-5"><i class="bi bi-three-dots pe-3"></i>單一訂單管理</a>
+                    </li>  
+                </ul>         
+           
+                <a href="#" class="px-4 sidebar-link"> <i class="bi bi-list-task pe-3"></i>參考連結</a>        
+            </nav>
 
             <!-- 3. 登出按鈕 -->
             <a href="#" class="mt-auto sidebar-link border-top">
@@ -97,7 +84,7 @@
                   <div class="card shadow-sm">
                     
                     <div class="card-header bg-transparent">
-                        <div class="input-group">
+                        <div class="input-group align-items-center">
 
                             <!-- 下拉式操作選單 -->
                             <div class="dropdown">
