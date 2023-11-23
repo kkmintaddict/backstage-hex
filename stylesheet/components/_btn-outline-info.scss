@@ -1,0 +1,30 @@
+$info:#A6384C;
+$info-box-shadow:0 0 0 0.25rem rgba(165,56,75,.5);
+$secondary: $gray-600;
+
+.btn-outline-info{
+    border-color:$info;
+    color: $info;
+    &:hover,&:focus, &:active{
+        background-color: $info !important;
+        border-color:$info !important;
+        color: #fff !important;
+    }
+    &:focus{
+        box-shadow: $info-box-shadow !important;
+    }   
+}
+
+.btn-outline-secondary{
+    border-color:$secondary;
+    color: $secondary;
+    &:hover,&:focus, &:active{
+        background-color: $secondary !important;
+        border-color: $secondary !important;
+        color: #fff;
+    }
+    &:focus{
+        box-shadow:0 0 0 0.25rem rgba(172, 181, 189, .5) !important;
+    }
+}
+

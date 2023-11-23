@@ -1,0 +1,18 @@
+$primary:#F29F05;
+$primary-box-shadow: 0 0 0 0.25rem rgba(242, 159 ,5, .25);
+
+table.theme{
+    .form-check-input:focus{
+        box-shadow: $primary-box-shadow !important;
+    }
+}
+form.theme{
+    .form-control:focus {
+        box-shadow: $primary-box-shadow !important;
+        border-color: $primary;        
+    }
+    .form-select:focus {
+        box-shadow: $primary-box-shadow !important;
+        border-color: $primary;            
+    }
+}

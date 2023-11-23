@@ -1,0 +1,16 @@
+$primary:#F29F05;
+$link-color-custom:$primary;
+$link-color-active: var(--bs-pagination-focus-color);
+
+
+
+.page-link.active,.page-link:focus{
+    background-color: $link-color-custom;
+    border-color: $link-color-custom;
+    color: #fff;
+    
+}
+.page-link:focus{
+    box-shadow: none;
+    background-color: $link-color-active;
+}

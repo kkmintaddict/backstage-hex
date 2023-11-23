@@ -1,0 +1,35 @@
+$body-color:#482e16;
+$primary:#F29F05;
+$danger:#D95204;
+$success:#73A626;
+$bg-danger: $danger;
+$bg-success:$success;
+
+a{
+    color: $body-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover, a.active{
+    color: $primary;
+    transition: all 0.1s;
+}
+.link-effect{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-pills .nav-link.active{
+    background-color: $primary;
+}
+.rounded-pill.bg-danger{
+    background-color: $danger !important;
+}
+.rounded-pill.bg-success{
+    background-color: $success !important;
+}
+.text-success{
+    color: $success !important;
+}
+.text-danger{
+    color: $danger !important;
+}

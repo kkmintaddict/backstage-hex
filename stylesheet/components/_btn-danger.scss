@@ -1,0 +1,10 @@
+$danger: #D95204;
+$danger-active:#aa3e00;
+
+.btn-danger{
+    color: #fff !important;
+    background-color: $danger;
+    &:active{
+        background-color: $danger-active !important;
+    }
+}
